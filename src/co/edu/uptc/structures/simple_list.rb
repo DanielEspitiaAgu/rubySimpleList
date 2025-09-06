@@ -56,5 +56,5 @@ class SimpleList
 
   def node_at(index)
   end
-
+  
 end
