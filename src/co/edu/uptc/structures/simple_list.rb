@@ -1,3 +1,5 @@
+
+
 class SimpleList
 
   def initialize
@@ -5,6 +7,15 @@ class SimpleList
   end
 
   def add(element)
+    new_node = Node.new(element)
+    if @head.nil?
+      @head = new_node
+    else
+      current = @head
+      current = current.next_node while current.next_node
+      current.next_node = new_node
+    end
+    true
   end
 
   def clear
