@@ -38,6 +38,12 @@ class Test
     puts my_list.to_s();
 
     my_list.set(0, 1);
+    
+    my_list.add("Camila")
+    
+    puts my_list.to_s
+
+    
 
   end
 end
