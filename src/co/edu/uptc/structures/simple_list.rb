@@ -127,7 +127,7 @@ class SimpleList
   
   def remove_at(index)
     if index <0
-      raise "Indice fuera del rango"     
+      raise "Index out of bounds"     
       
     end
     if index==0 
@@ -177,7 +177,7 @@ class SimpleList
   def sub_list(from_index, to_index)
     sublist = SimpleList.new
     if from_index<0 || to_index > size || from_index > to_index
-      raise "Índices fuera de rango"
+      raise "Index out of bounds"
     end
     current = @head
     index =0
@@ -215,7 +215,7 @@ class SimpleList
       current = current.next_node
       current_index+=1
     end
-    raise "índice fuera de rango"
+    raise "Index out of bounds"
     
   end
 
@@ -223,7 +223,7 @@ class SimpleList
 
   def validate_set_exceptions(index, element)
     if index<0
-      raise IndexError, "Índice negativo"
+      raise IndexError, "Index out of bounds"
     end
     if element.nil?
       raise "El elemento es nulo"  
@@ -234,7 +234,7 @@ class SimpleList
   private
 
   def node_at(index)
-    raise "Índice negativo" if index < 0
+    raise "Negative index" if index < 0
 
     current = @head
     current_index = 0
@@ -245,7 +245,7 @@ class SimpleList
       current_index += 1
     end
 
-    raise "Índice fuera de rango"
+    raise "Index out of bounds"
   end
   
 end
