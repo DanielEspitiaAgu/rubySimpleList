@@ -112,7 +112,7 @@ class SimpleList
       
     else
       current = @head
-      #Arreglar
+      
       i=0
       while i < index-1
         break if current.next_node.nil?
@@ -138,7 +138,7 @@ class SimpleList
     end
     current= @head.next_node
     previous = @head
-    #Arreglar 
+     
     i = 0
     while i < index - 1
       current = current.next_node
