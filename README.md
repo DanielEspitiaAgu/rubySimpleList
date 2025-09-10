@@ -34,7 +34,12 @@ En caso de necesitar otra versión, se puede gestionar fácilmente con herramien
 Existen dos formas de ejecutar el proyecto:  
 
 #### 1. Configuración de tareas en VS Code  
-Crea o edita el archivo `.vscode/tasks.json` con el siguiente contenido para facilitar la ejecución de los programas Ruby:  
+Para crear la tarea que ejecute tus programas en Ruby desde VS Code, sigue estos pasos:  
+
+1. Abre la paleta de comandos con *Ctrl+Shift+P*.  
+2. Escribe *“Tasks: Configure Task”* y selecciona la opción *“Create tasks.json file from template”*.  
+3. Escoge la opción *Others*.  
+4. En el archivo tasks.json que se abre, reemplaza el contenido con lo siguiente:
 
 ```json
 {
