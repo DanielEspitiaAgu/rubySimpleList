@@ -40,14 +40,6 @@ class SimpleList
     false
   end
 
-  def each
-    current = @head
-    while current
-      yield current.value
-      current = current.next_node
-    end
-  end
-
   def remove?(obj)
     current = @head
     previous = nil

@@ -25,8 +25,6 @@ class Test
         object_count(list)
       when 8
         contains_object(list)
-      when 9
-        show_each(list)
       when 0
         puts "¡Hasta luego!"
         break
@@ -46,7 +44,6 @@ class Test
     puts "6. Objeto en la posición"
     puts "7. Cantidad de objetos en la lista"
     puts "8. ¿Se contiene un objeto en la lista?"
-    puts "9. Mostrar objetos con each"
     puts "0. Salir"
     print "Seleccione una opción: "
   end
@@ -105,11 +102,6 @@ class Test
     print "Ingrese el objeto a verificar: "
     value = gets.chomp
     puts list.contains?(value) ? "El objeto está en la lista." : "El objeto NO está en la lista."
-  end
-
-  def self.show_each(list)
-    puts "Objetos en la lista:"
-    list.each { |value| puts value }
   end
 end
 
